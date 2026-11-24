@@ -1,0 +1,30 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Qdrant local data (if you ever switch to a folder volume)
+qdrant_data/
+qdrant_storage/
+
+# Source documents (copyrighted course material)
+nodejs.pdf
+*.pdf
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
