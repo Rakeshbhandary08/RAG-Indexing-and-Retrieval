@@ -30,4 +30,4 @@ vector_store=QdrantVectorStore.from_documents(documents=chunks,
                                               collection_name="indexing_genai")
 
 
-print("Indexing of the documents is done :)")
+print("Indexing of the documents is done.")
