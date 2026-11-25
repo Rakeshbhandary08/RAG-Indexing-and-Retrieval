@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-pdf_path=Path(__file__).parent /"nodejs.pdf"
+pdf_path=Path(__file__).parent /"synopsis.pdf"
 
 print(pdf_path)
 
@@ -27,7 +27,7 @@ embedding_model=GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001"
 vector_store=QdrantVectorStore.from_documents(documents=chunks,
                                               embedding=embedding_model,
                                               url="http://localhost:6333",
-                                              collection_name="learning_RAG_Genai")
+                                              collection_name="indexing_genai")
 
 
 print("Indexing of the documents is done :)")
